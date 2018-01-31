@@ -23,7 +23,7 @@ func main() {
 	}
 	defer session.Close()
 
-	c = session.DB("userlist").C("newuserdata")
+	c = session.DB("userlist").C("activeuserdata")
 	fmt.Println(c.Name)
 
 	for w := 1; w <= 500; w++ {
